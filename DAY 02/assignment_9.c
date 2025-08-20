@@ -1,18 +1,15 @@
 #include <stdio.h>
-
 int main() {
-    int a = 10, b = 15, c;
+    int a, b, temp;
+    printf("Enter first number (a): ");
+    scanf("%d", &a);
 
-    // Print original values
-    printf("Before swapping: a = %d, b = %d\n", a, b);
-
-    // Swapping using third variable
-    c = a;  // c = 10
-    a = b;  // a = 15
-    b = c;  // b = 10
-
-    // Print swapped values
+    printf("Enter second number (b): ");
+    scanf("%d", &b);
+    printf("\nBefore swapping: a = %d, b = %d\n", a, b);
+    temp = a;
+    a = b;
+    b = temp;
     printf("After swapping: a = %d, b = %d\n", a, b);
-
     return 0;
 }
