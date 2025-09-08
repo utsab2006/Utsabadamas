@@ -1,21 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    char toss[10];
+    char toss;
 
-    printf("Enter result of coin toss (Head/Tail): ");
-    scanf("%s", toss);
+    printf("Enter result of coin toss (H for Head / T for Tail): ");
+    scanf(" %c", &toss); 
 
-
-    if (strcmp(toss, "Head") == 0 || strcmp(toss, "head") == 0) {
+    if (toss == 'H' || toss == 'h') {
         printf("It is Head!\n");
-    } 
-    else if (strcmp(toss, "Tail") == 0 || strcmp(toss, "tail") == 0) {
+    }
+    else if (toss == 'T' || toss == 't') {
         printf("It is Tail!\n");
-    } 
+    }
     else {
-        printf("Invalid input! Please enter Head or Tail.\n");
+        printf("Invalid input! Please enter H or T.\n");
     }
 
     return 0;
