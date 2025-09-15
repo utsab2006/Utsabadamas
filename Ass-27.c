@@ -12,11 +12,6 @@ int main() {
         case 'i':
         case 'o':
         case 'u':
-        case 'A':
-        case 'E':
-        case 'I':
-        case 'O':
-        case 'U':
             printf("%c is a vowel.\n", ch);
             break;
 
@@ -26,3 +21,4 @@ int main() {
 
     return 0;
 }
+
